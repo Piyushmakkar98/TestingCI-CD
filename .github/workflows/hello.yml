@@ -7,4 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name : Print message
-        run : echo "Hello, Github Actio"
+        run : echo "Hello, Github Action"
+  say-bye:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print message
+        run : echo "bye from 2nd job "
