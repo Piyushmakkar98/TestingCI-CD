@@ -1,16 +1,29 @@
-name: Push Workflow
+# name: Push Workflow
 
-on: [push,pull_request]
+# on: [push,pull_request]
 
+# jobs:
+#   job1:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name : Print message
+#         run : echo "Hello, Github Action"
+#   say-bye:
+#     needs : job1
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Print message
+#         run : echo "bye from 2nd job "
+
+name : Uses Action
+on : push
 jobs:
-  job1:
+  test:
     runs-on: ubuntu-latest
+
     steps:
-      - name : Print message
-        run : echo "Hello, Github Action"
-  say-bye:
-    needs : job1
-    runs-on: ubuntu-latest
-    steps:
-      - name: Print message
-        run : echo "bye from 2nd job "
+      - name : Checkout code // clone a repo
+        uses : actions/checkout@v4
+      
+      - name : list file
+        run : ls 
