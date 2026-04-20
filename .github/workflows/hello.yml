@@ -9,6 +9,7 @@ jobs:
       - name : Print message
         run : echo "Hello, Github Action"
   say-bye:
+    needs : job1
     runs-on: ubuntu-latest
     steps:
       - name: Print message
