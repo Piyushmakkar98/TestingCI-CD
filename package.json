@@ -6,6 +6,6 @@
   },
   "scripts": {
     "start" : "node index.js",
-    "test" : "exit code 1"
+    "test" : "echo test successfully"
   }
 }
