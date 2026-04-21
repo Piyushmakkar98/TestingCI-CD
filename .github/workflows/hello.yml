@@ -18,7 +18,7 @@
 name : Uses Action
 on : push
 jobs:
-  test:
+  development:
     runs-on: ubuntu-latest
 
     steps:
@@ -36,4 +36,10 @@ jobs:
 
       - name : list file
         run : ls 
+  deploy-app:
+    needs : development
+    runs-on: ubuntu-latest
+    steps:
+      - name : deply 
+        run : echo "deploy success"
 
