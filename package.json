@@ -3,5 +3,9 @@
     "body-parser": "^2.2.2",
     "eslint": "^10.2.1",
     "express": "^5.2.1"
+  },
+  "scripts": {
+    "start" : "node index.js",
+    "test" : "echo test successfully"
   }
 }
