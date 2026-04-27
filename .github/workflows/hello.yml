@@ -66,4 +66,4 @@ jobs:
         with : 
          name : my-file
       - name : read file
-        uses : cat file.txt
+        run : cat file.txt
